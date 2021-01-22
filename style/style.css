@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
+.dark {
+    background-color: #21262d;
+    color: white;
+    border-color: white;
+    transition: .3s;
+    --main-bg-color: white;
+}
+
+.light {
+    background-color: #f7f7f7;
+    color: black;
+    border-color: black;
+    transition: 0.3s;
+    --main-bg-color: black;
+}
+
 body {
     width: 300px;
     height: 400px;
-    background-color: #21262d	;
-    color: white;
     padding: 0;
     margin: 0;
 }
@@ -21,7 +35,7 @@ input {
     padding: 0 5px 0 5px;
     outline: none;
     height: 20px;
-    border: none;
+    border: 1px solid;
 }
 
 label {
@@ -44,11 +58,9 @@ label {
 button {
     font-family: 'Fraunces', serif;
     width: 30%;
-    border: 1px solid white;
+    border: 1px solid;
     border-radius: 5px;
-    background-color: #21262d;
     margin-left: 30%;
-    color: white;
     cursor: pointer;
 }
 
@@ -60,7 +72,7 @@ button:hover {
 .display {
     display: flex;
     height: 20%;
-    border: 1px solid white;
+    border: 1px solid;
     border-radius: 10px;
     margin-top: 5%;
     padding-left: 3%;
@@ -71,3 +83,4 @@ button:hover {
 .result {
     margin-left: 2%;
 }
+
