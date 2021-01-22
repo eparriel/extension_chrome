@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+body {
+    width: 300px;
+    height: 400px;
+    background-color: #21262d	;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+#page {
+    margin: 2%;
+    display: block;
+    width: 95%;
+}
+
+input {
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    outline: none;
+    height: 20px;
+    border: none;
+}
+
+label {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 2%;
+    font-size: 1.5em;
+}
+
+.grid {
+    display: grid;
+    padding: 5% 10% 0 10%;
+    text-align: left;
+}
+
+.row {
+    display: grid;
+    margin-bottom: 5%;
+}
+
+button {
+    font-family: 'Fraunces', serif;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #21262d;
+    margin-left: 30%;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.display {
+    display: flex;
+    height: 20%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-left: 3%;
+    font-size: 1.4em;
+    align-items: center;
+}
+
+.result {
+    margin-left: 2%;
+}

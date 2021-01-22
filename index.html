@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
+
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li id="menu-1" class="active">
+                Lot
+            </li>
+            <li id="menu-2">
+                Page 2
+            </li>
+        </ul>
+
+        <div id="p1" class="able">
+            <div class="grid">
+                <div class="row">
+                    <label for="capitale">Capital:</label>
+                    <input id="capitale" type="text" placeholder="ex: 10000">
+                </div>
+                <div class="row">
+                    <label for="percent">Pourcentages par Trade:</label>
+                    <input id="percent" type="text" placeholder="ex: 3">
+                </div>
+                <div class="row">
+                    <label for="pips">Pips / Stop loss:</label>
+                    <input id="pips" type="text" placeholder="ex: 20">
+                </div>
+            </div>
+            <button id="btn">Calculer</button>
+
+            <div class="display">
+                <p><strong>Lot forex:</strong></p>
+                <p class="result" id="result"></p>
+            </div>
+            <div class="display">
+                <p><strong>Lot indice:</strong></p>
+                <p class="result" id="lot-indice"></p>
+            </div>
+        </div>
+        <div id="p2" class="enable">
+            <h1>test</h1>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

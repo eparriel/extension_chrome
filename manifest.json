@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "trading extension",
+  "description": "Calcule de la taille du lot",
+  "version": "0.1.0",
+  "author": "Enzo Parriel",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon16.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "128":"images/icon128.png"
+  },
+  "content_scripts": [{
+    "js": ["js/index.js"],
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }]
+}
