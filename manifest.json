@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "trading extension",
   "description": "Calcule de la taille du lot",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "author": "Enzo Parriel",
   "permissions": [
     "http://*/*",

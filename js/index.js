@@ -25,30 +25,23 @@ function calcul() {
     document.getElementById("lot-indice").innerText= indicesLot;
 }
 
-
-let btn = document.getElementById('btn');
-btn.addEventListener('click', function() {
-   calcul()
-}, false);
+document.getElementById('btn-extension-trading').addEventListener('click', function () {
+    calcul()
+});
 
 function menu() {
+    let p1 = document.getElementById('p1');
+    let p2 = document.getElementById('p2');
     document.getElementById('menu-1').classList.toggle('active');
     document.getElementById('menu-2').classList.toggle('active');
 
-    document.getElementById('p1').classList.toggle('enable');
-    document.getElementById('p2').classList.toggle('enable');
+     p1.classList.toggle('enable');
+     p2.classList.toggle('enable');
 
     document.getElementById('p1').classList.toggle('able');
     document.getElementById('p2').classList.toggle('able');
 }
 
-function theme(theme) {
-    document.getElementById('body').classList.toggle('dark');
-    document.getElementById('body').classList.toggle('light');
-
-    document.getElementById('btn').classList.toggle('dark');
-    document.getElementById('btn').classList.toggle('light');
-}
 
 document.getElementById('menu-1').addEventListener('click', function () {
     menu()
@@ -57,7 +50,3 @@ document.getElementById('menu-1').addEventListener('click', function () {
 document.getElementById('menu-2').addEventListener('click', function () {
     menu()
 });
-
-document.getElementById('theme-value').addEventListener('click', function (){
-    theme()
-})
